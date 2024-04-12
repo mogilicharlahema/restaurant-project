@@ -1,0 +1,52 @@
+/* .app__header__app__wrapper {
+    background-color: black;
+}
+
+
+.app__header-h1{
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 117px;
+    font-size: 90px;
+
+}
+
+.app__header-img img{
+    width: 80%;
+} */
+
+
+.app__header__app__wrapper {
+    display: flex; /* Use flexbox */
+    background-color: black;
+  }
+  
+  .app__wrapper_info {
+    flex: 1; /* Take remaining space */
+    padding: 20px; /* Adjust as needed */
+  }
+  
+  .app__wrapper_img {
+    flex: 1; /* Take remaining space */
+  }
+  
+  .app__header-h1 {
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 117px;
+    font-size: 90px;
+  }
+
+ 
+    
+  
+  
+  .app__wrapper_img img {
+    max-width: 100%; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
