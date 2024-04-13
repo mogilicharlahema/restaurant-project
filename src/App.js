@@ -34,9 +34,11 @@ import React from 'react';
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './components/Home/home';
-import Login from './components/login/login';
-import Book from './components/booktable/book';
+import Login from './components/login/login'; 
 import SignIn from './sign/signin';
+import Book from './components/booktable/navbar';
+import MainPage from './components/booktable/mainPage';
+
 
 
 const App = () => (
@@ -45,8 +47,9 @@ const App = () => (
       <Routes> 
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} /> 
-        <Route path='/book' element={<Book />} /> 
-      
+        {/* <Route path='/book' element={<Book/>} />
+          */}
+       <Route path='/book' element={<MainPage/>}/>
         <Route path='/signin' element={<SignIn/>}/>
       </Routes>
     </BrowserRouter>

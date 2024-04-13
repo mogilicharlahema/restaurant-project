@@ -1,0 +1,49 @@
+/* body{
+   background-image: url(../../../assets/wall.jpg);
+} */
+
+.looking-for-dining{
+    font-size: 2rem;
+    padding: 0 3%;
+    padding-bottom: 1.8%;
+    color:white;
+    margin-left: 250px;
+
+}
+
+.pizza-cta{
+    padding-top: 4%;
+}
+
+.book-table-btn{
+    color: aliceblue;
+    font-size: 1.2rem;
+    padding: 1% 5%;
+    margin-left: 400px;
+    border-radius: 25px;
+    background-color:brown;
+    border: 2px solid darkgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    &:hover{
+        color: brown;
+        background-color: rgb(160, 92, 205);
+        border: 2px solid grey;
+    }
+
+}
+@media (min-width:small-break){
+.book-table-btn{
+    font-size: 1.4rem;
+    padding: 0.5% 5%;
+}
+}
+
+.big-img-container{
+    padding: 4% 0;
+}
+.big-img{
+    width: 900px;
+    height: 390px;
+    border-radius: 35px;
+    margin-left: 200px;
+}

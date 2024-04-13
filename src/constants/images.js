@@ -11,6 +11,7 @@ import gallery07 from '../assets/gallery07.jpeg';
 import gallery08 from '../assets/gallery08.jpeg';
 import gallery09 from '../assets/gallery09.jpeg';
 import bar from'../assets/bar.jpeg';
+import dining from '../assets/dining.jpeg'
 
 
 import knife from '../assets/knife.png';
@@ -77,6 +78,7 @@ export default {
   email,
   password,
   person,
+  dining,
  
  
 
