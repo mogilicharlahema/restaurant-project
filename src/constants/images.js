@@ -38,7 +38,8 @@ import food from '../assets/food.jpeg';
 import email from '../assets/email.png';
 import password from '../assets/password.png';
 import person from '../assets/person.png';
-// import cross from '../assets/cross.jpg';
+
+import chicken from '../assets/chicken.png';
 
 export default {
   bg,
@@ -79,6 +80,7 @@ export default {
   password,
   person,
   dining,
+  chicken,
  
  
 

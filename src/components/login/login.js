@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import React, { useState,useEffect } from "react";
+import { onAuthStateChanged, createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebaseconfig";
 import './register.css';
 import { Link } from "react-router-dom";
-// import { Link, useHistory } from "react-router-dom";
+
 
 
 const Register = () => {
@@ -11,7 +11,19 @@ const Register = () => {
    const [email, setEmail] = useState('');
    const [pass, setPass] = useState('');
    const [confirmpass, setConfirmpass] = useState('');
-   // const history = useHistory();
+   const [isLoggedIn, setIsLoggedIn] = useState(false);
+ 
+
+
+   useEffect(() => {
+      const unsubscribe = onAuthStateChanged(auth, (user) => {
+         setIsLoggedIn(!!user);
+      });
+
+      return () => {
+         unsubscribe();
+      };
+   }, []);
 
    const submit = async (e) => {
       e.preventDefault();
@@ -30,6 +42,7 @@ const Register = () => {
 
    return (
       <>
+       {!isLoggedIn && (
          <div className="main_container_register">
             <div className="header">
                <h2>Registration</h2>
@@ -54,6 +67,7 @@ const Register = () => {
             <p>Already have an account? <Link to="/signin">Login now</Link></p>
             <button onClick={submit}>Register</button>
          </div>
+          )}
       </>
    );
 };
