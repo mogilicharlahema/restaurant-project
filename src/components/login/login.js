@@ -45,7 +45,7 @@ const Register = () => {
        {!isLoggedIn && (
          <div className="main_container_register">
             <div className="header">
-               <h2>Registration</h2>
+               <h2 style={{color:"wheat"}}>Registration</h2>
             </div>
 
             <div className="box">
@@ -64,7 +64,9 @@ const Register = () => {
                <input type="password" name="confirm password" value={confirmpass} placeholder="confirm password" onChange={(e) => setConfirmpass(e.target.value)} />
             </div>
 
-            <p>Already have an account? <Link to="/signin">Login now</Link></p>
+            {/* <p>Already have an account? <Link to="/signin">Login now</Link></p> */}
+            <p style={{ color: "white" }}>Already have an account? <Link to="/signin">Login now</Link></p>
+
             <button onClick={submit}>Register</button>
          </div>
           )}

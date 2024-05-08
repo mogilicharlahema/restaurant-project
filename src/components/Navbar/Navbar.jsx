@@ -24,15 +24,19 @@ const Navbar = () => {
     <li className='p__opensans'><a href='#contact'>Contact</a></li>
 
    </ul>
-   <div className='app__navbar-login'>
-   {/* <a href='#login' className='p__opensans'>Log In / Register</a> */}
+
+ 
+    <div className='app__navbar-login'>
+   
    <Link to={"/login "}className='p__opensans'>Log In / Register</Link>
   
-
-   <div />
-   {/* <a href='/' className='p__opensans'>Book Table</a> */}
    <Link to={"/book "}className='p__opensans'>Book Table</Link>
-   </div>
+   </div> *
+
+
+
+
+
    <div className="app__navbar-smallscreen">
 
      <GiHamburgerMenu color="#fff" fontSize={47} onClick={()=>setToggleMenu(true)}></GiHamburgerMenu>
