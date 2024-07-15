@@ -11,7 +11,7 @@ const Navbar = (props) => {
         <NavbarBrand style={{fontSize:"3.5rem",color:"blue",marginTop:"150px"}}  className='nav-brand' onClick={() => { props.setPage(0) }}>
         
       
-          Dining Cabin
+         happy Dining Cabin
         </NavbarBrand>
       </ReactstrapNavbar>
     </>

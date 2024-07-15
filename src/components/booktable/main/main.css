@@ -1,6 +1,4 @@
-/* body{
-   background-image: url(../../../assets/wall.jpg);
-} */
+
 
 .looking-for-dining{
     font-size: 2rem;
@@ -26,7 +24,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     &:hover{
         color: brown;
-        background-color: rgb(160, 92, 205);
+        background-color: rgba(160, 92, 205, 0);
         border: 2px solid grey;
     }
 
