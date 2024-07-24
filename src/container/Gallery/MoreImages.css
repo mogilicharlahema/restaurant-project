@@ -1,0 +1,29 @@
+.more-images-container {
+    padding: 2rem;
+    background-color:black;
+    text-align: center;
+  }
+  
+  .more-images-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .more-images-card {
+    margin: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .more-images-card img {
+    width:300px;  /* Adjust to fit container */
+    height:300px; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  body{
+    background-color: black;
+  }
+  

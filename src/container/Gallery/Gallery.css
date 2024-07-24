@@ -28,6 +28,7 @@
     flex-direction: row;
     max-width: 50%;
     position: relative;
+    border-radius: 30px;
 }
 
 .app__gallery-images_container {
@@ -48,6 +49,7 @@
     min-width: 301px;
     height: 447px;
     margin-right: 2rem;
+    border-radius: 30px;
 }
 
 .gallery__image-icon {
@@ -65,6 +67,7 @@
     object-fit: cover;
     opacity: 1;
     transition: .5s ease;
+    border-radius: 30px;
 }
 
 .app__gallery-images_card:hover img {

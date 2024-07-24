@@ -10,6 +10,10 @@ import gallery06 from '../assets/gallery06.jpeg';
 import gallery07 from '../assets/gallery07.jpeg';
 import gallery08 from '../assets/gallery08.jpeg';
 import gallery09 from '../assets/gallery09.jpeg';
+import gallery11 from'../assets/gallery11.jpeg';
+// import gallery12 from'../assets/gallery12.jpeg';
+import gallery13 from'../assets/gallery13.jpeg';
+import gallery14 from'../assets/gallery14.jpeg';
 import bar from'../assets/bar.jpeg';
 import dining from '../assets/dining.jpeg'
 
@@ -38,8 +42,12 @@ import food from '../assets/food.jpeg';
 import email from '../assets/email.png';
 import password from '../assets/password.png';
 import person from '../assets/person.png';
-
+import menuimage from '../assets/menuimage.jpg';
 import chicken from '../assets/chicken.png';
+import menuscard from '../assets/menu card.webp';
+import card from '../assets/card.avif';
+import visting from '../assets/visting.jpg';
+
 
 export default {
   bg,
@@ -54,6 +62,10 @@ export default {
   gallery07,
   gallery08,
   gallery09,
+  gallery11,
+ 
+  gallery13,
+  gallery14,
   knife,
   logo,
   menu,
@@ -81,6 +93,10 @@ export default {
   person,
   dining,
   chicken,
+  menuimage,
+  menuscard,
+  card,
+  visting,
  
  
 
