@@ -1,25 +1,17 @@
-
-
-
-
-
 import React, { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../firebaseconfig";
-import './sigin.css';
+import { auth } from "../../firebaseconfig"; // Adjust the path to the correct location
+import './signin.css'; // Corrected the filename
 import { Link, useNavigate } from "react-router-dom";
 
-const SignIn = () => {
+const SignInComponent = () => {
    const [email, setEmail] = useState('');
    const [pass, setPass] = useState('');
    const nav = useNavigate();
 
    const submit = async (e) => {
-      if(e){
-         e.preventDefault();
-      }
+      if (e) e.preventDefault();
 
-      // Check if email and password are provided
       if (!email || !pass) {
          alert("Please fill in both email and password before logging in.");
          return;
@@ -30,7 +22,6 @@ const SignIn = () => {
          const user = userCredential.user;
          if (user) {
             alert("Login successful");
-            // Navigate only if login is successful
             nav('/');
          }
       } catch (error) {
@@ -42,26 +33,23 @@ const SignIn = () => {
       <>
          <div className="main_container_register">
             <div className="header">
-               <h2>Registration</h2>
+               <h2>Sign In</h2>
             </div>
 
             <div className="box">
-               <input type="text" name="Email-id" value={email} placeholder="enter email-id" onChange={(e) => setEmail(e.target.value)} />
+               <input type="text" name="Email-id" value={email} placeholder="Enter email-id" onChange={(e) => setEmail(e.target.value)} />
             </div>
 
             <div className="box">
-               <input type="password" name="password" value={pass} placeholder="password" onChange={(e) => setPass(e.target.value)} />
+               <input type="password" name="password" value={pass} placeholder="Password" onChange={(e) => setPass(e.target.value)} />
             </div>
 
-            {/* <p>Don't have an account? <Link to="/login">Create Account</Link></p> */}
-            <p style={{ color: "white" }}>Don't have an account? <Link to="/login">Create Account</Link></p>
+            <p style={{ color: "white" }}>Don't have an account? <Link to="/register">Create Account</Link></p>
 
-           
             <button onClick={submit}>Login</button>
          </div>
       </>
    );
 };
 
-export default SignIn;
-
+export default SignInComponent;
