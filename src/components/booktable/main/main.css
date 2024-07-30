@@ -1,4 +1,4 @@
-
+/* 
 
 .looking-for-dining{
     font-size: 2rem;
@@ -14,22 +14,25 @@
 }
 
 .book-table-btn{
-    color: aliceblue;
+    color:whitesmoke;
     font-size: 1.2rem;
     padding: 1% 5%;
     margin-left: 400px;
-    border-radius: 25px;
-    background-color:brown;
-    border: 2px solid darkgray;
+    border-radius: 20px;
+    background:brown; ;
+    /* border: 2px solid darkgray; */
+    /* transition: background-color 0.3s ease; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     &:hover{
-        color: brown;
-        background-color: rgba(160, 92, 205, 0);
-        border: 2px solid grey;
+        color:dodgerblue;
+        background: color #004d4c;
+        border: 3px solid grey;
     }
 
-}
-@media (min-width:small-break){
+} */
+ 
+  
+/* @media (min-width:small-break){
 .book-table-btn{
     font-size: 1.4rem;
     padding: 0.5% 5%;
@@ -42,6 +45,71 @@
 .big-img{
     width: 900px;
     height: 390px;
-    border-radius: 35px;
-    margin-left: 200px;
+    /* border-radius: 35px; */
+    /* margin-left: 200px; */
+/* }  */ 
+
+
+
+.main-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide any overflow */
+}
+
+.pizza-cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+    padding: 0 3%;
+    width: 100%; /* Ensure the text-container takes full width */
+}
+
+.text-button-container {
+    padding: 0 3%;
+}
+
+.looking-for-dining {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis if text overflows */
+}
+
+.book-table-btn {
+    color: whitesmoke;
+    font-size: 1.2rem;
+    padding: 1% 5%;
+    border-radius: 20px;
+    background: brown;
+    border: 2px solid darkgray;
+    transition: background-color 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+}
+
+.book-table-btn:hover {
+    color: dodgerblue;
+    background: #004d4c;
+    border: 3px solid grey;
+}
+
+/* If using the image as a background */
+.big-img-container {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../assets/backtable.avif');
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Avoid repeating the image */
+}
+
+.big-img {
+    display: none; /* Hide the image element if using background-image */
 }

@@ -47,6 +47,11 @@ import chicken from '../assets/chicken.png';
 import menuscard from '../assets/menu card.webp';
 import card from '../assets/card.avif';
 import visting from '../assets/visting.jpg';
+import backtable from '../assets/backtable.avif';
+import table  from '../assets/table.jpeg';
+import bookform from '../assets/bookform.jpg';
+import form2 from '../assets/form 2.jpg';
+import form3 from '../assets/form3.avif';
 
 
 export default {
@@ -97,6 +102,11 @@ export default {
   menuscard,
   card,
   visting,
+  backtable,
+  table,
+  bookform,
+  form2,
+  form3,
  
  
 
