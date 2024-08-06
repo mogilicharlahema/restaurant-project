@@ -52,6 +52,7 @@ import table  from '../assets/table.jpeg';
 import bookform from '../assets/bookform.jpg';
 import form2 from '../assets/form 2.jpg';
 import form3 from '../assets/form3.avif';
+import profileicon from "../assets/profile icon.jpeg"
 
 
 export default {
@@ -107,6 +108,7 @@ export default {
   bookform,
   form2,
   form3,
+  profileicon,
  
  
 

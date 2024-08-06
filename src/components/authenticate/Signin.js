@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../firebaseconfig"; // Adjust the path to the correct location
-import './signin.css'; // Corrected the filename
+import { auth } from "../../firebaseconfig"; 
+import './signin.css'; 
 import { Link, useNavigate } from "react-router-dom";
+import Swal from 'sweetalert2';
 
 const SignInComponent = () => {
    const [email, setEmail] = useState('');
@@ -13,7 +14,12 @@ const SignInComponent = () => {
       if (e) e.preventDefault();
 
       if (!email || !pass) {
-         alert("Please fill in both email and password before logging in.");
+         Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Please fill in both email and password before logging in.',
+         });
+
          return;
       }
 
@@ -21,11 +27,20 @@ const SignInComponent = () => {
          const userCredential = await signInWithEmailAndPassword(auth, email, pass);
          const user = userCredential.user;
          if (user) {
-            alert("Login successful");
-            nav('/');
+            Swal.fire({
+               icon: 'success',
+               title: 'Login successful',
+               text: 'You have successfully logged in!',
+            }).then(() => {
+               nav('/');
+            });
          }
       } catch (error) {
-         alert(error.message);
+         Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: error.message,
+         });
       }
    };
 
@@ -53,3 +68,5 @@ const SignInComponent = () => {
 };
 
 export default SignInComponent;
+
+
