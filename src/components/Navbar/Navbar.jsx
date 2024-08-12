@@ -217,17 +217,17 @@ const Navbar = () => {
         )}
       </div> */}
 
-<div className='app__navbar-login'>
-  <Link to={"/book"} className='p__opensans'>Book Table</Link>
-  {user ? (
-    <div className="user__info">
-      <span className='p__opensans user__name'>{user.displayName || user.email}</span>
-      <button className='logout__button' onClick={handleLogout}>Logout</button>
-    </div>
-  ) : (
-    <Link to={"/register"} className='p__opensans'>Log In / Register</Link>
-  )}
-</div>
+      <div className='app__navbar-login'>
+        <Link to={"/book"} className='p__opensans'>Book Table</Link>
+        {user ? (
+          <div className="user__info">
+            <span className='p__opensans user__name'>{user.displayName || user.email}</span>
+            <button className='logout__button' onClick={handleLogout}>Logout</button>
+          </div>
+        ) : (
+          <Link to={"/register"} className='p__opensans'>Log In / Register</Link>
+        )}
+      </div>
 
 
       <div className="app__navbar-smallscreen">
