@@ -309,3 +309,19 @@
         font-size: 1.2rem;
     }
 }
+
+/* Base Navbar Styles */
+.app__navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-black);
+    padding: 10px 20px;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0; /* Sticks at the top */
+    z-index: 1000; /* Keeps the navbar on top of other elements */
+}
+
+/* Other existing styles */

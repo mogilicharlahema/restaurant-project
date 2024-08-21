@@ -84,7 +84,8 @@ const Navbar = () => {
                   <li className='p__opensans'><Link to="/login" onClick={() => setToggleMenu(false)}>Log In</Link></li>
                   <li className='p__opensans'><Link to="/register" onClick={() => setToggleMenu(false)}>Register</Link></li>
                 </>
-              )}
+              )
+              }
             </ul>
           </div>
         )}
