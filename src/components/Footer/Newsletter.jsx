@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import SubHeading from '../SubHeading/SubHeading';
-import Swal from 'sweetalert2';  // Import SweetAlert2
+import Swal from 'sweetalert2';  
 import './Newsletter.css';
 
 const Newsletter = () => {
@@ -49,7 +49,6 @@ const Newsletter = () => {
         <button className='custom__button' onClick={handleSubscribe}>Subscribe</button>
       </div>
 
-      {/* {subscribed && <p className='p__opensans'>Subscribed</p>} */}
     </div>
   );
 };

@@ -1,4 +1,4 @@
-// src/components/FindUs/FindUs.js
+
 import React from 'react';
 import { useNavigate } from 'react-router-dom';  // Import useNavigate
 import { SubHeading } from '../../components';

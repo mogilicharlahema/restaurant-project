@@ -1,4 +1,4 @@
-// MoreImages.js
+
 import React from 'react';
 import { images } from '../../constants';
 import './MoreImages.css';
